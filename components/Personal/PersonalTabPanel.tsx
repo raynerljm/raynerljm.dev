@@ -20,7 +20,7 @@ const PersonalTabPanel: FC<Props> = ({ achievements }) => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6 sm:gap-10">
             {achievements.map((achievement, idx) => (
               <PanelCard key={idx} idx={idx} achievement={achievement} />
             ))}

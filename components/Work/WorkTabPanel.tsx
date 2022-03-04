@@ -26,6 +26,8 @@ const WorkTabPanel: FC<Props> = ({ work }) => {
             <a
               className="text-white link-underline link-underline-black"
               href={work.companyLink}
+              target="_blank"
+              rel="noreferrer"
             >
               {work.company}
             </a>

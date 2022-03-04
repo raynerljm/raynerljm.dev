@@ -14,7 +14,7 @@
 
 @layer components {
   .white-glow {
-    @apply text-white text-opacity-60 -translate-y-0.5;
+    @apply text-white text-opacity-90 -translate-y-0.5;
     text-shadow: 0 0 7px #877cf1;
     text-shadow: 0 0 3px #fff;
   }

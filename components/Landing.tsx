@@ -52,7 +52,7 @@ const Landing: FC = () => {
       <Fade direction="up" delay={4000} triggerOnce>
         <a
           id="findOutButton"
-          className="transition-all duration-500 bg-dark-2 hover:text-white text-tertiary text-xl py-3 px-6 rounded-md"
+          className="transition-all duration-500 bg-dark-2 hover:white-glow text-tertiary text-xl py-3 px-6 rounded-md"
           href="#about"
         >
           Find out more

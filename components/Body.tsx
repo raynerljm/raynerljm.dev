@@ -7,7 +7,7 @@ type Props = {
 const Body: FC<Props> = ({ children, className }) => {
   return (
     <>
-      <div className={`max-w-7xl mx-auto w-full ${className}`}>{children}</div>
+      <div className={`max-w-5xl mx-auto w-full ${className}`}>{children}</div>
     </>
   );
 };
