@@ -1,16 +1,100 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+
+  * {
+    @apply scroll-smooth;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer components {
+  .white-glow {
+    @apply text-white text-opacity-60 -translate-y-0.5;
+    text-shadow: 0 0 7px #877cf1;
+    text-shadow: 0 0 3px #fff;
+  }
+
+  .animate-white-glow {
+    @apply transition-all text-tertiary hover:white-glow;
+  }
+
+  /* For landing page angle sliding effect */
+
+  .left,
+  .right {
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .left {
+    transform: skew(0deg, -10deg);
+  }
+  .right {
+    transform: skew(0deg, 10deg);
+  }
+  .left .content {
+    width: 100vw;
+    text-align: center;
+  }
+  .right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+  }
+  .spanContent {
+    @apply text-2xl font-bold;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: ease-out 0.6s;
+  }
+
+  /* For landing page loading screen */
+
+  .typed-out {
+    @apply w-0 animate-typing whitespace-nowrap overflow-hidden text-tertiary;
+    animation-delay: 1.4s;
+  }
+
+  .typed-out-2 {
+    @apply typed-out;
+    animation-delay: 2.4s;
+  }
+
+  .typed-out-3 {
+    @apply typed-out;
+    animation-delay: 3.2s;
+  }
+
+  /* For hover underline */
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#fff, #fff);
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+  }
+
+  .link-underline-black {
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#fff, #fff);
+  }
+
+  .link-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+  }
 }
 
-* {
-  box-sizing: border-box;
+@layer utilities {
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
 }
