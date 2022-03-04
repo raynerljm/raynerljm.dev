@@ -20,7 +20,7 @@ const Contact: FC = () => {
         </Fade>
         <Fade triggerOnce>
           <p className="text-tertiary text-lg sm:text-xl text-justify mb-4 font-light">
-            Thank you for coming to the end of my website and I hope you've
+            Thank you for coming to the end of my website and I hope you&apos;ve
             enjoyed your time here!
           </p>
           <p className="text-tertiary text-lg sm:text-xl text-justify mb-4 font-light">
