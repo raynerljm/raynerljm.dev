@@ -82,7 +82,7 @@ const Navbar = () => {
       >
         <div
           className={`flex flex-col justify-between h-5 w-6 ml-auto sm:hidden cursor-pointer z-50 ${
-            isOpen ? "absolute -top-2 right-2" : ""
+            isOpen ? "absolute -top-2 right-0" : ""
           }`}
           onClick={toggleNav}
         >

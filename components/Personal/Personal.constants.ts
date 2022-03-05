@@ -8,7 +8,7 @@ export const PERSONAL_ACHIEVEMENTS: { [key: string]: Achievement[] } = {
       image: "/images/startit.png",
       duration: "2021 - 2022",
       descriptions: [
-        "StartIT is an official student group under NUS Computing that fosters a community of like-minded entrepreneurs to grow and network",
+        "StartIT is an official student group under NUS Computing that fosters a community of like-minded entrepreneurs to grow and network.",
         "During my enjoyable time at StartIT, I spearheaded a marketing strategy that increased Instagram following by over 53%, hosted UI/UX design and Figma workshops for my peers, and lead a project to build a startup's MVP.",
       ],
       link: "https://www.instagram.com/nusstartit/",
@@ -19,8 +19,8 @@ export const PERSONAL_ACHIEVEMENTS: { [key: string]: Achievement[] } = {
       image: "/images/lifehack.png",
       duration: "January - July 2021",
       descriptions: [
-        "LifeHack 2021 is a virtual 24-hour summer hackathon organized by NUS Students' Computing Club and sponsored by CSIT and Micron",
-        "As the Project Director, I directed a team 9 talented individuals to conceive, propose, and execute the event with over S$17,000 of prizes award. Additionally, I spearheaded the development of the event website as well as sourced for and liaised with external sponsors",
+        "LifeHack 2021 is a virtual 24-hour summer hackathon organized by NUS Students' Computing Club and sponsored by CSIT and Micron.",
+        "As the Project Director, I directed a team 9 talented individuals to conceive, propose, and execute the event with over S$17,000 of prizes award. Additionally, I spearheaded the development of the event website as well as sourced for and liaised with external sponsors.",
       ],
       link: "https://lifehack.nuscomputing.com/",
     },
@@ -97,7 +97,7 @@ export const PERSONAL_ACHIEVEMENTS: { [key: string]: Achievement[] } = {
       link: "",
     },
     {
-      title: "Fundamental of Digital Marketing",
+      title: "Fundamentals of Digital Marketing",
       subtitle: "Google",
       image: "",
       duration: "October 2018",

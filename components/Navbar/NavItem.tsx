@@ -11,7 +11,7 @@ export const NavItem: FC<Props> = ({ children, href, closeNav }) => {
         href={href}
         rel="noreferrer"
         target="_blank"
-        className="bg-dark-2 py-2 px-5 rounded-md transition-all hover:white-glow"
+        className="animate-white-glow cursor-pointer sm:bg-dark-2 sm:py-2 sm:px-5 sm:rounded-md sm:transition-all sm:hover:white-glow"
       >
         {children}
       </a>
