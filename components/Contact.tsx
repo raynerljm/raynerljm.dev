@@ -102,9 +102,9 @@ const Contact: FC = () => {
                         </form>
                     ) : (
                         <h1 className="mb-16 mt-8 text-center text-xl text-tertiary">
-                            Thanks for reaching out! I'll contact you via the
-                            email you provided as soon as I can. Have a great
-                            day ahead.
+                            Thanks for reaching out! I&apos;ll contact you via
+                            the email you provided as soon as I can. Have a
+                            great day ahead.
                         </h1>
                     )}
                 </Fade>

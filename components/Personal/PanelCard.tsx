@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Transition } from "@headlessui/react";
 import { FC, useState } from "react";
 import { Achievement } from "./Personal.types";

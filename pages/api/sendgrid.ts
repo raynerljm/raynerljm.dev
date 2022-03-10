@@ -1,9 +1,10 @@
 import sendgrid from "@sendgrid/mail";
+import { NextApiRequest, NextApiResponse } from "next";
 import { EMAIL } from "../../lib/constants";
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
 
-async function sendEmail(req, res) {
+async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
     console.log(req);
     try {
         // console.log("REQ.BODY", req.body);
