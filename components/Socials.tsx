@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Fade } from "react-awesome-reveal";
 import { SiGithub, SiLinkedin, SiLeetcode, SiTelegram } from "react-icons/si";
-import { GITHUB, LEETCODE, LINKEDIN, TELEGRAM } from "../../lib/constants";
+import { GITHUB, LEETCODE, LINKEDIN, TELEGRAM } from "../lib/constants";
 
 type Props = {
     direction: "row" | "col";

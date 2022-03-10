@@ -21,7 +21,8 @@ import Socials from "../components/Socials";
 const Home: NextPage = () => {
     return (
         <>
-            <main className="flex flex-col overflow-x-hidden bg-dark">
+            <main className="relative -z-0 flex flex-col overflow-x-hidden bg-dark">
+                <div className="absolute top-0 left-0 -z-10 h-screen w-screen bg-gradient-to-b from-secondary to-dark" />
                 {/* Vertical socials at bottom left */}
                 <Socials
                     direction="col"
