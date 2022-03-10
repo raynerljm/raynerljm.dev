@@ -31,7 +31,7 @@ const Landing: FC = () => {
     return (
         <Section
             id="home"
-            className="flex h-screen flex-col items-center justify-center"
+            className="flex h-screen flex-col items-center justify-center bg-gradient-to-b from-secondary to-dark"
         >
             <RaynerLJM />
             <div className="my-4" />
