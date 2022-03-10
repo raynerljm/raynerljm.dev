@@ -50,6 +50,11 @@ const Navbar = () => {
         findOutButton.forEach((button) => {
             button.style.opacity = isOpen ? "0%" : "100%";
         });
+        const footerText: NodeListOf<HTMLButtonElement> =
+            document.querySelectorAll("#footerText");
+        footerText.forEach((button) => {
+            button.style.opacity = isOpen ? "0%" : "100%";
+        });
     }, [isOpen]);
 
     const toggleNav = () => {
@@ -59,7 +64,9 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 z-30 flex h-16 w-full items-center bg-transparent bg-opacity-80 px-8 backdrop-blur transition-all duration-500 ${
-                isNavbarOpen ? "translate-y-0" : "-translate-y-16 delay-200"
+                isNavbarOpen || isOpen
+                    ? "translate-y-0"
+                    : "-translate-y-16 delay-200"
             }`}
         >
             <Fade direction="down" triggerOnce>

@@ -7,10 +7,11 @@ const Footer: FC = () => {
         <footer className="flex w-full justify-center bg-dark py-4">
             <Fade direction="up" triggerOnce className="">
                 <a
-                    className="animate-white-glow cursor-pointer text-center"
+                    className="animate-white-glow cursor-pointer text-center duration-500"
                     href={PORTFOLIO_REPO}
                     rel="noreferrer"
                     target="_blank"
+                    id="footerText"
                 >
                     Designed & Developed by Rayner
                 </a>
