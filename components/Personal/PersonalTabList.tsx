@@ -2,24 +2,24 @@ import { FC } from "react";
 import { Tab } from "@headlessui/react";
 
 type Props = {
-  tab: string;
+    tab: string;
 };
 
 const PersonalTabList: FC<Props> = ({ tab }) => {
-  return (
-    <>
-      <Tab
-        className={({ selected }) =>
-          `py-2 px-3 w-24 text-base sm:text-lg text-center transition-all border-b-2 font-light whitespace-nowrap ${
-            selected
-              ? "bg-dark-2 text-white border-white"
-              : "text-tertiary border-tertiary hover:text-white hover:bg-dark-2"
-          }`
-        }
-      >
-        I {tab}
-      </Tab>
-    </>
-  );
+    return (
+        <>
+            <Tab
+                className={({ selected }) =>
+                    `whitespace-nowrap border-b-2 py-2 px-3 text-center text-base font-light transition-all sm:text-lg ${
+                        selected
+                            ? "border-white bg-dark-2 text-white"
+                            : "border-tertiary text-tertiary hover:bg-dark-2 hover:text-white"
+                    }`
+                }
+            >
+                I {tab}
+            </Tab>
+        </>
+    );
 };
 export default PersonalTabList;
