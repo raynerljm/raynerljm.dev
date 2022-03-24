@@ -56,7 +56,7 @@ const Contact: FC = () => {
                         anytime!
                     </p>
                 </Fade>
-                <Fade direction="up" triggerOnce className="w-full self-center">
+                <Fade triggerOnce className="w-full self-center">
                     {!isSubmitted ? (
                         <form
                             className="flex flex-col gap-4 sm:mb-8"

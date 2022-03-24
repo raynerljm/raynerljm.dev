@@ -3,98 +3,214 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-poppins;
-  }
+    body {
+        @apply font-poppins;
+    }
 
-  * {
-    @apply scroll-smooth;
-  }
+    * {
+        @apply scroll-smooth;
+    }
 }
 
 @layer components {
-  .white-glow {
-    @apply text-white text-opacity-90 -translate-y-0.5;
-    text-shadow: 0 0 7px #877cf1;
-    text-shadow: 0 0 3px #fff;
-  }
+    .white-glow {
+        @apply -translate-y-0.5 text-white text-opacity-90;
+        text-shadow: 0 0 7px #877cf1;
+        text-shadow: 0 0 3px #fff;
+    }
 
-  .animate-white-glow {
-    @apply transition-all text-tertiary hover:white-glow;
-  }
+    .animate-white-glow {
+        @apply hover:white-glow text-tertiary transition-all;
+    }
 
-  /* For landing page angle sliding effect */
+    /* For landing page angle sliding effect */
 
-  .left,
-  .right {
-    width: 50%;
-    overflow: hidden;
-    display: inline-block;
-  }
-  .left {
-    transform: skew(0deg, -10deg);
-  }
-  .right {
-    transform: skew(0deg, 10deg);
-  }
-  .left .content {
-    width: 100vw;
-    text-align: center;
-  }
-  .right .content {
-    width: 100vw;
-    text-align: center;
-    transform: translate(-50vw);
-  }
-  .spanContent {
-    @apply text-2xl font-bold;
-    display: inline-block;
-    text-transform: uppercase;
-    transition: ease-out 0.6s;
-  }
+    .left,
+    .right {
+        width: 50%;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .left {
+        transform: skew(0deg, -10deg);
+    }
+    .right {
+        transform: skew(0deg, 10deg);
+    }
+    .left .content {
+        width: 100vw;
+        text-align: center;
+    }
+    .right .content {
+        width: 100vw;
+        text-align: center;
+        transform: translate(-50vw);
+    }
+    .spanContent {
+        @apply text-2xl font-bold;
+        display: inline-block;
+        text-transform: uppercase;
+        transition: ease-out 0.6s;
+    }
 
-  /* For landing page loading screen */
+    /* For landing page loading screen */
 
-  .typed-out {
-    @apply w-0 animate-typing whitespace-nowrap overflow-hidden text-tertiary;
-    animation-delay: 1.4s;
-  }
+    .typed-out {
+        @apply w-0 animate-typing overflow-hidden whitespace-nowrap text-tertiary;
+        animation-delay: 1.4s;
+    }
 
-  .typed-out-2 {
-    @apply typed-out;
-    animation-delay: 2.4s;
-  }
+    .typed-out-2 {
+        @apply typed-out;
+        animation-delay: 2.4s;
+    }
 
-  .typed-out-3 {
-    @apply typed-out;
-    animation-delay: 3.2s;
-  }
+    .typed-out-3 {
+        @apply typed-out;
+        animation-delay: 3.2s;
+    }
 
-  /* For hover underline */
-  .link-underline {
-    border-bottom-width: 0;
-    background-image: linear-gradient(transparent, transparent),
-      linear-gradient(#fff, #fff);
-    background-size: 0 2px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.5s ease-in-out;
-  }
+    /* For hover underline */
+    .link-underline {
+        border-bottom-width: 0;
+        background-image: linear-gradient(transparent, transparent),
+            linear-gradient(#fff, #fff);
+        background-size: 0 2px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.5s ease-in-out;
+    }
 
-  .link-underline-black {
-    background-image: linear-gradient(transparent, transparent),
-      linear-gradient(#fff, #fff);
-  }
+    .link-underline-black {
+        background-image: linear-gradient(transparent, transparent),
+            linear-gradient(#fff, #fff);
+    }
 
-  .link-underline:hover {
-    background-size: 100% 2px;
-    background-position: 0 100%;
-  }
+    .link-underline:hover {
+        background-size: 100% 2px;
+        background-position: 0 100%;
+    }
+
+    .white {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+
+    .white:before {
+        z-index: 1000;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60vh;
+    }
+
+    .white:after {
+        z-index: 1000;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 20vh;
+    }
+
+    .squares {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .square {
+        animation: squares 9.5s linear infinite;
+        align-self: flex-end;
+        width: 1em;
+        height: 1em;
+        transform: translateY(100%);
+        background: #ebebeb;
+        @apply bg-tertiary bg-opacity-30;
+    }
+
+    .square:nth-child(2) {
+        height: 1.5em;
+        width: 3em;
+        animation-delay: 1s;
+        animation-duration: 17s;
+        -webkit-filter: blur(5px);
+    }
+    .square:nth-child(3) {
+        height: 2em;
+        width: 1em;
+        animation-delay: 1.5s;
+        animation-duration: 8s;
+        -webkit-filter: blur();
+    }
+    .square:nth-child(4) {
+        height: 1em;
+        width: 1.5em;
+        animation-delay: 0.5s;
+        -webkit-filter: blur(3px);
+        animation-duration: 13s;
+    }
+    .square:nth-child(5) {
+        height: 1.25em;
+        width: 2em;
+        animation-delay: 4s;
+        -webkit-filter: blur(2px);
+        animation-duration: 11s;
+    }
+    .square:nth-child(6) {
+        height: 2.5em;
+        width: 2em;
+        animation-delay: 2s;
+        -webkit-filter: blur(1px);
+        animation-duration: 9s;
+    }
+    .square:nth-child(7) {
+        height: 5em;
+        width: 2em;
+        -webkit-filter: blur(2.5px);
+        animation-duration: 12s;
+    }
+    .square:nth-child(8) {
+        height: 1em;
+        width: 3em;
+        animation-delay: 5s;
+        -webkit-filter: blur(6px);
+        animation-duration: 18s;
+    }
+    .square:nth-child(9) {
+        height: 1.5em;
+        width: 2em;
+        -webkit-filter: blur(0.5px);
+        animation-duration: 9s;
+    }
+    .square:nth-child(10) {
+        height: 3em;
+        width: 2.4em;
+        animation-delay: 6s;
+        -webkit-filter: blur(0.5px);
+        animation-duration: 12s;
+    }
+
+    @keyframes squares {
+        from {
+            transform: translateY(100%) rotate(-50deg);
+        }
+        to {
+            transform: translateY(calc(-100vh + -100%)) rotate(20deg);
+        }
+    }
 }
 
 @layer utilities {
-  .vertical-text {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-  }
+    .vertical-text {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 }

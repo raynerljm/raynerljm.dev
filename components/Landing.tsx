@@ -27,12 +27,30 @@ const RaynerLJM: FC = () => {
     );
 };
 
+const FloatingParticles: FC = () => (
+    <div className="white">
+        <div className="squares">
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+            <div className="square" />
+        </div>
+    </div>
+);
+
 const Landing: FC = () => {
     return (
         <Section
             id="home"
             className="flex h-screen flex-col items-center justify-center"
         >
+            <FloatingParticles />
             <RaynerLJM />
             <div className="my-4" />
             <h1 className="h-24 w-full text-center text-xl leading-loose text-tertiary text-opacity-90 sm:h-40 sm:w-3/4 sm:text-4xl sm:leading-snug">
