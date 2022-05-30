@@ -139,7 +139,7 @@ export const PERSONAL_ACHIEVEMENTS: { [key: string]: Achievement[] } = {
         {
             title: "Amplitube 2022 (w/ Soggy Jeans and Olisymps)",
             subtitle: "Shaw Foundation Alumni House",
-            image: "/images/amplitube2022.jpg",
+            image: "/images/amplitube2022.png",
             duration: "May 2022",
             descriptions: [],
             link: "https://youtu.be/xp7Il9vsIgU?t=236",
