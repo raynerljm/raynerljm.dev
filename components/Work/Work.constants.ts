@@ -3,12 +3,24 @@ import { WorkExperience } from "./Work.types";
 export const WORK_EXPERIENCES: WorkExperience[] = [
     {
         role: "Software Engineer Intern",
+        company: "Shopee",
+        companyLink: "https://shopee.sg/",
+        duration: "May 2022 - Present",
+        responsibilities: [
+            "Developed a full-stack application with authentication with React for the entry task where I learnt how to implement session cookies, configure webpack manually, and understand Redux on a deeper level",
+            "Implemented features and bug fixes with thorough code review where I familiarized myself with best practices and types of abstractions utilized",
+        ],
+        technologies: ["React", "TypeScript", "SCSS"],
+    },
+    {
+        role: "Software Engineer Intern",
         company: "Ethlas",
         companyLink: "https://ethlas.com/",
-        duration: "February 2022 - Present",
+        duration: "February 2022 - April 2022",
         responsibilities: [
-            "Initiated and spearheaded the large-scale refactoring and documentation of the web app's codebase as well as a migration from JavaScript to TypeScript to improve maintainability",
-            "Developed a main feature of private tournaments as a growth tactic that expanded the user base",
+            "Developed end to end growth tactic features with Next.js, Tailwind CSS and Firebase to grow the userbase and improve the user experience",
+            "Collaborated with smart contract engineers to build features that interacted with the Polygon chain using web3",
+            "Spearheaded the large-scale refactoring and documentation of the codebase to improve maintainability",
             "Implemented anti-cheat functionality across multiple Unity games to prevent abuse",
         ],
         technologies: [
@@ -23,7 +35,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         role: "Software Engineer",
         company: "CCSGP",
         companyLink: "https://volunteer.comp.nus.edu.sg/",
-        duration: "October - Present",
+        duration: "October - February 2022",
         responsibilities: [
             "Designed and developed the entire volunteer job board website's front end",
             "Abstracted reusable components and custom hooks with thorough documentation to ensure scalability",
