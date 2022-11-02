@@ -5,4 +5,4 @@ export const LEETCODE = "https://leetcode.com/raypuff/";
 export const TELEGRAM = "https://t.me/raypuff";
 export const PORTFOLIO_REPO = "https://github.com/raynerljm/raynerljm.dev";
 export const RESUME_LINK =
-    "https://drive.google.com/file/d/1sOncMRKdHZH5mxfUKTnwru8FUAK3_O4W/view?usp=sharing";
+    "https://drive.google.com/file/d/1nNmPd7r319V2psQ7l3EvmAHDSTDSwxDn/view?usp=share_link";

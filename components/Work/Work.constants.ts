@@ -5,8 +5,9 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         role: "Software Engineer Intern",
         company: "Shopee",
         companyLink: "https://shopee.sg/",
-        duration: "May 2022 - Present",
+        duration: "May 2022 - July 2022",
         responsibilities: [
+            "Oversaw migration of settings page from monorepo to micro-frontend architecture to improve maintainability and performance",
             "Developed a full-stack application with authentication with React for the entry task where I learnt how to implement session cookies, configure webpack manually, and understand Redux on a deeper level",
             "Implemented features and bug fixes with thorough code review where I familiarized myself with best practices and types of abstractions utilized",
         ],
@@ -18,10 +19,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         companyLink: "https://ethlas.com/",
         duration: "February 2022 - April 2022",
         responsibilities: [
-            "Developed end to end growth tactic features with Next.js, Tailwind CSS and Firebase to grow the userbase and improve the user experience",
+            "Developed an interactive loot box mechanic with data tracking that sold over 70 units within 24 hours of releasing feature",
             "Collaborated with smart contract engineers to build features that interacted with the Polygon chain using web3",
-            "Spearheaded the large-scale refactoring and documentation of the codebase to improve maintainability",
-            "Implemented anti-cheat functionality across multiple Unity games to prevent abuse",
+            "Initiated and oversaw documentation and refactoring of codebase to improve maintainability and enforce code consistency",
+            "Operated in fast development cycles while communicating with product managers to quickly test and push platform features",
         ],
         technologies: [
             "Next.js",
@@ -35,7 +36,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         role: "Software Engineer",
         company: "CCSGP",
         companyLink: "https://volunteer.comp.nus.edu.sg/",
-        duration: "October - February 2022",
+        duration: "October 2021 - February 2022",
         responsibilities: [
             "Designed and developed the entire volunteer job board website's front end",
             "Abstracted reusable components and custom hooks with thorough documentation to ensure scalability",
@@ -58,7 +59,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         role: "Software Engineer Intern",
         company: "MatcHub",
         companyLink: "https://matchub.co/",
-        duration: "November - December 2021",
+        duration: "November 2021 - December 2021",
         responsibilities: [
             "Initiated and undertook the migration of over 80% of the codebase from JavaScript to TypeScript by establishing a long-term type hierarchy that reduced numerous typed bugs",
             "Restructured the front-end components to make the site responsive on mobile screens",
@@ -71,7 +72,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         role: "Tech Lead and Software Engineer",
         company: "GreenPins",
         companyLink: "https://greenpins.sg/",
-        duration: "July - September 2021",
+        duration: "July 2021 - September 2021",
         responsibilities: [
             "Led a team of 6 to design and develop a search engine web app based on client’s requirements",
             "Collaborated with the back-end and infra engineers to design the database and deploy the website",
@@ -89,7 +90,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         role: "Software Engineer Intern",
         company: "vibefam",
         companyLink: "https://vibefam.com/",
-        duration: "May - July 2021",
+        duration: "May 2021 - July 2021",
         responsibilities: [
             "Revamped the web app with over 200 monthly viewers by revising the site's responsiveness across all device screens",
             "Designed and developed the layout of blog content to improve engagement and increase traffic",

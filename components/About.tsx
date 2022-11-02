@@ -12,10 +12,9 @@ const About: FC<Props> = () => {
             </Fade>
             <Fade triggerOnce>
                 <p className="mb-4 text-justify text-lg font-light text-tertiary sm:text-xl">
-                    I am currently a going Year 3 Computer Science undergraduate
-                    at the National University of Singapore specializing in
-                    software engineering and taking a minor in interactive media
-                    development.
+                    I am currently a Penultimate Year Computer Science
+                    undergraduate at the National University of Singapore
+                    specializing in software engineering.
                 </p>
                 <p className="text-justify text-lg font-light text-tertiary sm:text-xl">
                     I love working on projects that not just look good, but also

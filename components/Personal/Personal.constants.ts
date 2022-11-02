@@ -71,6 +71,14 @@ export const PERSONAL_ACHIEVEMENTS: { [key: string]: Achievement[] } = {
     ],
     upskill: [
         {
+            title: "Webpack 5 in 2022",
+            subtitle: "Udemy",
+            image: "",
+            duration: "July 2022",
+            descriptions: [],
+            link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-5db0957b-ef52-4a3d-bf39-2c6bae4b9d75.pdf",
+        },
+        {
             title: "Ethereum and Solidity: The Complete Developer's Guide",
             subtitle: "Udemy",
             image: "",
