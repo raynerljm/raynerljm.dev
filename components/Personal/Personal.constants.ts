@@ -1,7 +1,83 @@
 import { Achievement } from "./Personal.types";
 
 export const PERSONAL_ACHIEVEMENTS: { [key: string]: Achievement[] } = {
+    hack: [
+        {
+            title: "Ninja Van Last Mile Driver App | 2nd Prize",
+            subtitle: "Ninja Van Code Dojo 2023",
+            image: "/images/ninjavan.png",
+            duration: "February 2023",
+            descriptions: [],
+            link: "https://snek-eight.vercel.app/",
+        },
+        {
+            title: "MapAble | Top 3 for Problem Statement",
+            subtitle: "NUS Google Developer Student Club Hack for Good 2023",
+            image: "/images/mapable.png",
+            duration: "February 2023",
+            descriptions: [],
+            link: "https://devpost.com/software/mapable-h1vqfc",
+        },
+        {
+            title: "Paws Together | Touch My Heart Award",
+            subtitle: "Open Government Products Hack for Public Good 2023",
+            image: "/images/paws-together.png",
+            duration: "January 2023",
+            descriptions: [],
+            link: "https://hack.gov.sg/2023-prototypes/paws-together/",
+        },
+        {
+            title: "WhereFi | Top 8 Hacks",
+            subtitle: "NUS Hackers Hack&Roll 2023",
+            image: "/images/wherefi.jpg",
+            duration: "January 2023",
+            descriptions: [],
+            link: "https://devpost.com/software/wherefi",
+        },
+        {
+            title: "SeeTurtle | Best Design Hack",
+            subtitle: "SUTD What The Hack 2021",
+            image: "/images/wth.png",
+            duration: "September 2021",
+            descriptions: [
+                "SeeTurtle is a robotic turtle which travels the ocean, filtering microplastics as it swims.",
+                "The developed web app is a simulation of what the platform would be like if our invention came to life. It streams the turtle's live feed and display statistics about the waste collected.",
+            ],
+            link: "https://wth-seeturtle.vercel.app/",
+        },
+        {
+            title: "PayMeLah",
+            subtitle: "NUS Hack & Roll 2022",
+            image: "/images/paymelah.png",
+            duration: "January 2022",
+            descriptions: [
+                "PayMeLah is a Web App and Telegram Bot solution that uses computer vision to make bill splitting easier.",
+            ],
+            link: "https://paymelah.vercel.app/",
+        },
+        {
+            title: "ÀI",
+            subtitle: "NTU Deep Learning Week Hackathon 2021",
+            image: "/images/ai.png",
+            duration: "October 2021",
+            descriptions: [
+                "ÀI is a Web App integrated with a sentiment analysis ML model that analyzes a Telegram chat to determine if the other party is interested in you.",
+            ],
+            link: "https://dlw-hackathon.vercel.app/",
+        },
+    ],
     lead: [
+        {
+            title: "Senior Adviser",
+            subtitle: "NUS Orbital",
+            image: "/images/senior-adviser.png",
+            duration: "2022",
+            descriptions: [
+                "NUS Orbital (CP2106) is a NUS Computing's self-directed software development project for Year 1 students to take during Summer",
+                "NUS Orbital means a lot to me as my participation last year was a significant milestone in my journey as a software engineer and was what truly sparked my passion for building tech. I am really grateful for the opportunity to return this year as an adviser and to be a part of my juniors' learning journeys where I hope I have made a positive impact.",
+            ],
+            link: "https://credentials.nus.edu.sg/ecc1301b-1d45-45a1-803a-7aa97b418383",
+        },
         {
             title: "Director of Marketing & UI/UX",
             subtitle: "NUS StartIT (NUS Technopreneurship Club)",
@@ -36,40 +112,15 @@ export const PERSONAL_ACHIEVEMENTS: { [key: string]: Achievement[] } = {
             link: "https://www.instagram.com/nusamplified/",
         },
     ],
-    hack: [
-        {
-            title: "SeeTurtle | Best Design Hack",
-            subtitle: "SUTD What The Hack 2021 Hackathon",
-            image: "/images/wth.png",
-            duration: "September 2021",
-            descriptions: [
-                "SeeTurtle is a robotic turtle which travels the ocean, filtering microplastics as it swims.",
-                "The developed web app is a simulation of what the platform would be like if our invention came to life. It streams the turtle's live feed and display statistics about the waste collected.",
-            ],
-            link: "https://wth-seeturtle.vercel.app/",
-        },
-        {
-            title: "PayMeLah",
-            subtitle: "NUS Hack & Roll 2022",
-            image: "/images/paymelah.png",
-            duration: "January 2022",
-            descriptions: [
-                "PayMeLah is a Web App and Telegram Bot solution that uses computer vision to make bill splitting easier.",
-            ],
-            link: "https://paymelah.vercel.app/",
-        },
-        {
-            title: "ÀI",
-            subtitle: "NTU Deep Learning Week Hackathon 2021",
-            image: "/images/ai.png",
-            duration: "October 2021",
-            descriptions: [
-                "ÀI is a Web App integrated with a sentiment analysis ML model that analyzes a Telegram chat to determine if the other party is interested in you.",
-            ],
-            link: "https://dlw-hackathon.vercel.app/",
-        },
-    ],
     upskill: [
+        {
+            title: "Above & Beyond Computer Science (ABCS) Singapore 2023",
+            subtitle: "Facebook",
+            image: "",
+            duration: "July - September 2022",
+            descriptions: [],
+            link: "https://nus.edu.sg/cfg/events/details/584",
+        },
         {
             title: "Webpack 5 in 2022",
             subtitle: "Udemy",
